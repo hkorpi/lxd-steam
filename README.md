@@ -1,3 +1,4 @@
+references:
 https://blog.simos.info/running-steam-in-a-lxd-system-container/
 https://blog.simos.info/running-x11-software-in-lxd-containers/
 
@@ -6,6 +7,15 @@ https://gitlab.steamos.cloud/steamrt/steam-runtime-tools/-/blob/master/pressure-
 https://gitlab.steamos.cloud/steamrt/steam-runtime-tools/-/issues/35
 
 https://discuss.linuxcontainers.org/t/how-secure-is-security-nesting-true/2919
+
+https://discourse.ubuntu.com/t/lxd-incus-profile-for-gui-apps-wayland-x11-and-pulseaudio/40255
+
+create profile:
+lxc profile create steam
+lxc profile edit steam < steam.profile
+
+launch instance:
+lxc launch ubuntu:18.04 --profile default --profile steam steam
 
 start:
 lxc start steam
