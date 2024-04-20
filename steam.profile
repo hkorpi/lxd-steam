@@ -17,6 +17,7 @@ config:
       - vulkan-tools
     runcmd:
       - 'sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf'
+      - 'echo export PULSE_SERVER=unix:/home/ubuntu/pulse-native | tee --append /home/ubuntu/.profile'
       - 'wget https://cdn.akamai.steamstatic.com/client/installer/steam.deb'
       - 'apt-get update'
       - 'dpkg -i /steam.deb'
