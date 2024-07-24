@@ -13,6 +13,7 @@ config:
       - mesa-utils
       - pulseaudio
       - pulseaudio-utils
+      - alsa-utils
       - dbus-x11
       - vulkan-tools
     runcmd:
