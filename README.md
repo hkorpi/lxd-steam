@@ -49,6 +49,7 @@ Stop steam container: `lxc start steam`
 
 System information:
 ``` 
+lspci -k | grep -A 3 -i vga
 dmidecode
 xrandr --listproviders
 vulkaninfo --summary
