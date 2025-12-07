@@ -13,7 +13,7 @@ lxc exec steam -- cloud-init status --wait
 # Note: you have to use the same nvidia library version as in the host
 lxc exec steam -- mkdir -p /tmp/nvidia
 lxc file push ./nvidia-drivers.sh steam/tmp/nvidia/drivers.sh
-lxc exec steam -- /tmp/nvidia/drivers.sh libnvidia-gl-550
+lxc exec steam -- /tmp/nvidia/drivers.sh libnvidia-gl-580
 lxc exec steam -- rm -rf /tmp/nvidia
 lxc restart steam
 
