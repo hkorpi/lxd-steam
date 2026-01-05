@@ -43,7 +43,7 @@ devices:
     type: proxy
   X0Socket:
     bind: container
-    connect: unix:/tmp/.X11-unix/X2
+    connect: unix:/tmp/.X11-unix/X3
     listen: unix:/tmp/.X11-unix/X1
     security.gid: "1001"
     security.uid: "1001"
